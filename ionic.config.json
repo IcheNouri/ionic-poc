@@ -1,0 +1,7 @@
+{
+  "name": "myp-mobile-poc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
