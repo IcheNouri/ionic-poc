@@ -1,0 +1,43 @@
+<div class="d-flex flex-column h-100 pt-3 px-3 pt-sm-4 px-sm-4 pt-md-6 px-md-8 pt-lg-7 px-lg-9">
+  <div class="row no-gutters">
+    <div class="col d-flex align-items-center">
+      <img src="assets/images/logo_myPrimobox_blue.svg" alt="Logo MyPrimobox" class="app-logo" />
+    </div>
+  </div>
+  <div class="row no-gutters mt-5 mt-lg-8">
+    <div class="col-12 col-lg-6 d-flex align-items-center order-2 order-lg-0 py-3 px-0 py-md-3 px-md-4 py-lg-4 px-lg-6">
+      <div class="action-card">
+        <div class="row no-gutters">
+          <div class="col">
+            <h4 class="card-title" jhiTranslate="authentication.actions.login.title">Already signed in ?</h4>
+          </div>
+        </div>
+        <div class="row no-gutters mt-3">
+          <div class="card-description col" jhiTranslate="authentication.actions.login.subtitle">Access your personal myPrimobox account</div>
+        </div>
+        <div class="button-row row no-gutters pt-3">
+          <div class="col">
+            <button (click)="login()" class="action-btn btn btn-primary btn-lg" jhiTranslate="authentication.actions.login.button">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center py-3 px-0 py-md-3 px-md-4 py-lg-4 px-lg-6">
+      <div class="action-card">
+        <div class="row no-gutters">
+          <div class="col">
+            <h4 class="card-title" jhiTranslate="authentication.actions.activate.title">First connection ?</h4>
+          </div>
+        </div>
+        <div class="row no-gutters mt-3">
+          <div class="card-description col" jhiTranslate="authentication.actions.activate.subtitle">You have received a letter or an email from your employer</div>
+        </div>
+        <div class="button-row row no-gutters pt-3">
+          <div class="col">
+            <button routerLink="/activate/code" class="action-btn btn btn-outline-primary btn-lg" jhiTranslate="authentication.actions.activate.button">Activate My Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

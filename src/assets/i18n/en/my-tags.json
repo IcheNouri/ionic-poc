@@ -1,0 +1,13 @@
+{
+  "my-tags": {
+    "title": "My Tags",
+    "create": "Add a new tag",
+    "update": {
+      "create-title": "Create a tag",
+      "update-title": "Update a tag",
+      "form": {
+        "label": "Name"
+      }
+    }
+  }
+}

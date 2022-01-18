@@ -10,6 +10,12 @@
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
+      "i18n": {
+        "sourceLocale": "fr-FR",
+        "locales": {
+          "fr": "src/i18n/fr/navbar.json"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -31,7 +37,10 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": ["src/theme/variables.scss", "src/content/scss/global.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/content/scss"]
+            },
             "scripts": [],
             "aot": false,
             "vendorChunk": true,

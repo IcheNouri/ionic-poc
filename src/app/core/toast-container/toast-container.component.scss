@@ -1,0 +1,46 @@
+@import 'bootstrap-variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+.toast-container {
+  width: 100%;
+  pointer-events: none;
+  background: none !important;
+}
+
+ngb-toast {
+  flex-basis: 35px;
+  font-size: 1em;
+  margin-top: 0.2em;
+  color: $light;
+  width: 100% !important;
+  max-width: none !important;
+  pointer-events: all;
+
+  @include media-breakpoint-up(sm) {
+    width: auto !important;
+    max-width: 350px !important;
+  }
+
+  &.toast-info {
+    background-color: $info;
+  }
+
+  &.toast-success {
+    background-color: $success;
+  }
+
+  &.toast-warning {
+    background-color: $warning;
+  }
+
+  &.toast-error {
+    background-color: $danger;
+  }
+
+  .close-btn {
+    padding: 0.3em;
+    color: $light;
+  }
+}

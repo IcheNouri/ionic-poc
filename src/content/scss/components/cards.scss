@@ -1,0 +1,32 @@
+@import 'colors';
+
+.document-card {
+  &:not(.flat) {
+    background-color: $background-200;
+    border-radius: 8px;
+    padding: 2.3rem 2.3rem 2.1rem 3.9rem;
+  }
+
+  .header {
+    margin-bottom: 1.6rem;
+
+    .title {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-menu {
+      padding: 0.5rem;
+
+      .bi {
+        font-size: 2rem;
+        color: $tertiary-400;
+      }
+    }
+  }
+
+  .content {
+    margin-bottom: 1.6rem;
+    margin-right: 1.6rem;
+  }
+}

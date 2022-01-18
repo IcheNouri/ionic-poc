@@ -1,0 +1,10 @@
+{
+  "home": {
+    "title": "myPrimobox - Home",
+    "grid": {
+      "paycheck": "Paycheck",
+      "my-documents": "My Documents",
+      "employee-portal": "My Employee Portal"
+    }
+  }
+}

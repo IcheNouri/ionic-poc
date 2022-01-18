@@ -1,0 +1,19 @@
+<div class="modal-header row no-gutters align-items-center">
+  <h4 class="modal-title col text-center" jhiTranslate="authentication.activate.email.more-info.title"></h4>
+
+  <button type="button" class="close col col-auto" (click)="activeModal.dismiss()">&times;</button>
+</div>
+
+<div class="modal-body">
+  <p jhiTranslate="authentication.activate.email.more-info.body"></p>
+</div>
+
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-primary float-right"
+    data-dismiss="modal"
+    jhiTranslate="authentication.activate.email.more-info.done"
+    (click)="activeModal.dismiss()"
+  ></button>
+</div>

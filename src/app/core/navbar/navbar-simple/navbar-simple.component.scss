@@ -1,0 +1,84 @@
+@import 'bootstrap-mixins';
+@import 'colors';
+@import 'variables';
+
+.navbar {
+  padding: 2.3rem;
+
+  @include media-breakpoint-only(sm) {
+    padding: 2.6rem 2.7rem;
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding: 1.5rem;
+    background-position: left 78px top 0;
+  }
+
+  .logo-img {
+    height: 3.372rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../../../../assets/images/logo_myPrimobox.svg') no-repeat center center;
+    background-size: contain;
+
+    @include media-breakpoint-only(sm) {
+      height: 2.63rem;
+    }
+
+    @include media-breakpoint-only(xs) {
+      height: 2rem;
+    }
+  }
+
+  .add-btn {
+    margin-right: 3rem;
+  }
+
+  .navbar-icon-btn {
+    margin-left: 0.5rem;
+    color: $tertiary-300;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+
+      &.notification-btn {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .notification-btn {
+    position: relative;
+
+    .notitication-badge {
+      position: absolute;
+      top: 0;
+      right: -1px;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      border: solid $background-100 2px;
+      background-color: $notification;
+    }
+  }
+
+  .user-profile {
+    margin-left: 1rem;
+    margin-right: 3rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: $background-100;
+    font-weight: $font-weight-bold-value;
+    font-size: 1.4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    &:hover {
+      background-color: $tertiary-100;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+  }
+}

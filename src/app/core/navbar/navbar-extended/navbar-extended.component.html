@@ -1,0 +1,17 @@
+<myp-navbar-simple [firstName]="firstName" [lastName]="lastName"></myp-navbar-simple>
+<div class="navbar-content">
+  <div class="search-content">
+    <div class="welcome-message" jhiTranslate="navbar.greetings" [translateValues]="{ firstName: firstName, lastName: lastName }">Hello {{ lastName }} {{ firstName }}</div>
+    <form class="search d-flex" (submit)="search()">
+      <input id="search-input" type="text" placeholder="{{ 'navbar.search-document-placeholder' | translate }}" [formControl]="searchValue" />
+      <button class="search-icon">
+        <span class="bi bi-search"></span>
+      </button>
+    </form>
+  </div>
+
+  <div class="available-space-container">
+    <img class="d-none d-lg-block" src="assets/images/navbar_file.png" alt="Espace stockage" />
+    <div class="label" jhiTranslate="navbar.available-space">Available space : 1.0 GB</div>
+  </div>
+</div>

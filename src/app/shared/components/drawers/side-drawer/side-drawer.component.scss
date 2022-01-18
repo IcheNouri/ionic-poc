@@ -1,0 +1,48 @@
+@import 'bootstrap-mixins';
+@import 'colors';
+@import 'variables';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 88888;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-height: 100%;
+  z-index: 99999;
+  background-color: $background-100;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 22%);
+  padding: 2.1rem 1.5rem 2.1rem 2.2rem;
+  overflow-y: auto;
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+
+  .header {
+    margin-bottom: 4.9rem;
+
+    .close-btn {
+      border-radius: 1rem;
+      background-color: $close-btn;
+      color: $tertiary-500;
+      font-size: 3rem;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $tertiary-200;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="308" height="331" viewBox="0 0 308 331">
+    <defs>
+        <linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0075b0"/>
+            <stop offset="1" stop-color="#346998"/>
+        </linearGradient>
+        <clipPath id="b">
+            <path transform="translate(226)" style="fill:url(#a)" d="M0 0h308v331H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-226)" style="clip-path:url(#b)">
+        <g style="opacity:.148">
+            <path data-name="Tracé 15650" d="m661.075 799.976 45.374 65.124 56.576 81.163-56.576 81.163-45.6 65.428H547.731l107.683-146.588-107.49-146.29z" transform="translate(-310.344 -663.41)" style="fill:#9ec8dd"/>
+        </g>
+        <g data-name="logo-arrow" style="opacity:.203">
+            <path data-name="Tracé 15650" d="m624.521 799.976 30.741 44.073 38.33 54.927-38.33 54.924-30.9 44.278h-76.631l72.954-99.2-72.824-99z" transform="rotate(180 533.366 511.09)" style="fill:#237dfc;opacity:.416"/>
+        </g>
+    </g>
+</svg>

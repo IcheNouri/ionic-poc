@@ -1,0 +1,60 @@
+@import 'bootstrap-variables';
+
+fa-icon {
+  font-size: 100px;
+}
+
+.spinner-container {
+  mask: url('../../../../assets/images/spinner_animated.svg') no-repeat center / contain;
+  -webkit-mask: url('../../../../assets/images/spinner_animated.svg') no-repeat center / contain;
+  width: 100px;
+  height: 100px;
+  background-color: $dark;
+
+  &.default {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.font-size {
+    width: 1em;
+    height: 1em;
+  }
+
+  &.expand {
+    height: 100%;
+    width: 100%;
+  }
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+  }
+
+  &.success {
+    background-color: $success;
+  }
+
+  &.danger {
+    background-color: $danger;
+  }
+
+  &.warning {
+    background-color: $warning;
+  }
+
+  &.info {
+    background-color: $info;
+  }
+
+  &.light {
+    background-color: $light;
+  }
+
+  &.dark {
+    background-color: $dark;
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "authentication": {
+    "title": "myPrimobox : my personal account",
+    "subtitle": "Your own secured storage space",
+    "actions": {
+      "login": {
+        "title": "Already signed in ?",
+        "subtitle": "Access your myPrimobox account",
+        "button": "Log In",
+        "form": {
+          "password-forgotten": "Forgot your password ?",
+          "remember-me": "Remember me"
+        }
+      },
+      "activate": {
+        "title": "First connection ?",
+        "subtitle": "You have received a letter from your employer",
+        "button": "Activate My Account"
+      }
+    },
+    "activate": {
+      "title": "Activate my account",
+      "code": {
+        "subtitle": "Please enter the code given to you by your employer by post:",
+        "next": "Continue",
+        "back": "Back"
+      },
+      "identity": {
+        "stepper": "Identity",
+        "subtitle": "We need to confirm your identity in order to give you access to your documents.",
+        "info": "Why communicate these information ?",
+        "form": {
+          "firstname": {
+            "label": "First Name"
+          },
+          "lastname": {
+            "label": "Last Name"
+          },
+          "birthdate": {
+            "label": "Date of Birth"
+          }
+        },
+        "next": "Next"
+      },
+      "email": {
+        "stepper": "Email",
+        "subtitle": {
+          "text": "We recommend using a personal email address to access your personal myPrimobox account. ",
+          "more-info": "More info..."
+        },
+        "more-info": {
+          "title": "Information",
+          "body": "Your professional email address may change throughout your career if you change jobs, branches or companies...<br><br>Moreover, we cannot guarantee the confidentiality of your account if you use a professional email address. <br><br>To ensure that you always have access to your myPrimobox account, even when you are not working, you must have access to your login email at all times. <br><br>Entering your personal email address will allow you to access your documents at any time.",
+          "done": "I understand"
+        },
+        "form": {
+          "email": {
+            "label": "Personal Email Address",
+            "errors": {
+              "email": "Please enter a valid email address"
+            }
+          }
+        },
+        "help": "You do not have an email address ?",
+        "next": "Next",
+        "back": "Back"
+      },
+      "password": {
+        "stepper": "Password",
+        "subtitle": "We recommend using a strong password to secure your account.",
+        "form": {
+          "password": {
+            "label": "Password"
+          }
+        },
+        "indicators": {
+          "none": "Help",
+          "weak": "Weak",
+          "medium": "Medium",
+          "good": "Good",
+          "excellent": "Excellent"
+        },
+        "criteria": {
+          "title": "Your password must :",
+          "length": "contain 8 characters or more",
+          "rules": {
+            "description": "including at least 3 of the following elements :",
+            "uppercase": "an uppercase letter",
+            "lowercase": "a lowercase letter",
+            "number": "a number",
+            "special": "a special character"
+          }
+        },
+        "cgu": "I have read and I accept the Terms of Use",
+        "next": "Activate my account",
+        "back": "Back"
+      }
+    }
+  }
+}

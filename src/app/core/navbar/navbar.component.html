@@ -1,0 +1,17 @@
+<ion-header [translucent]="true" #navbarContainer class="navbar-container" [class.scrolled]="isWindowScrolled" [class.fixed]="mode !== NavbarModeEnum.EXTENDED">
+  <nav *ngIf="mode === NavbarModeEnum.SIMPLE" class="navbar-simple">
+    <myp-navbar-simple [firstName]="firstName" [lastName]="lastName"></myp-navbar-simple>
+  </nav>
+
+  <nav *ngIf="mode === NavbarModeEnum.EXTENDED" data-cy="navbar" class="navbar-extended" [class.scrolled]="isWindowScrolled">
+    <myp-navbar-extended [firstName]="firstName" [lastName]="lastName"></myp-navbar-extended>
+  </nav>
+</ion-header>
+
+<button *ngIf="isUserLoggedIn" [@fabslideup]="fabPosition" class="btn btn-primary btn-add-fab d-block d-lg-none" routerLink="/documents-old/upload">
+  <span class="bi bi-plus"></span>
+</button>
+
+<myp-side-drawer [(isOpen)]="isNotificationDrawerOpen" titleKey="navbar.notifications.drawer.title">
+  <div class="notifications"></div>
+</myp-side-drawer>

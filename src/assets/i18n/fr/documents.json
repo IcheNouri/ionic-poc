@@ -1,0 +1,95 @@
+{
+  "documents": {
+    "list": {
+      "new": "Nouveau",
+      "emptyDocumentList": "Aucun document à afficher.",
+      "documentCount": {
+        "none": "Aucun document",
+        "singular": "1 document",
+        "plural": "{{ count }} documents"
+      },
+      "sort": {
+        "by": "Trier par",
+        "mostRecent": "Du + récent au + ancien",
+        "mostOld": "Du + ancien au + récent"
+      },
+      "actions": {
+        "download": {
+          "name": "Télécharger",
+          "error": "Une erreur inatten est survenue lors du téléchargement du document. Veuillez réessayer plus tard."
+        },
+        "share": "Partager",
+        "rename": "Renommer",
+        "delete": "Placer dans la corbeille"
+      }
+    },
+    "search": {
+      "header": {
+        "title": "Documents",
+        "subtitle": "Accueil",
+        "cardDisplay": "Vue en carte",
+        "listDisplay": "Vue en liste"
+      },
+      "form": {
+        "name": "Rechercher par nom",
+        "startDate": "Du",
+        "endDate": "Au"
+      },
+      "action": {
+        "search": "Rechercher",
+        "filter": "Filtrer"
+      }
+    },
+    "company-filter": {
+      "uploaded-by": "Déposés par",
+      "me": "Moi",
+      "see-more": "Voir plus",
+      "see-less": "Voir moins",
+      "rename": {
+        "action": "Renommer",
+        "title": "Renommer",
+        "cancel": "Annuler",
+        "save": "Enregistrer"
+      }
+    },
+    "category-filter": {
+      "categories": "Catégories",
+      "see-more": "Voir plus",
+      "see-less": "Voir moins",
+      "create-button": "Créer une catégorie",
+      "create-edit": {
+        "title": {
+          "create": "Nouvelle catégorie",
+          "edit": "Modifier la catégorie"
+        },
+        "save": {
+          "create": "Créer",
+          "edit": "Enregistrer"
+        },
+        "name": {
+          "label": "Nom",
+          "placeholder": "Attribuer un nom à votre catégorie"
+        },
+        "color": "Sélectionner une couleur",
+        "cancel": "Annuler",
+        "delete": "Supprimer la catégorie",
+        "delete-pro-tooltip": "Vous ne pouvez pas supprimer cette catégorie.",
+        "pro-warning-message": "Cette catégorie a été automatiquement créée par votre employeur.",
+        "delete-confirm": {
+          "title": "Confirmation",
+          "message": "Êtes-vous certain de vouloir supprimer cette catégorie ?",
+          "yes": "Oui",
+          "no": "Non"
+        },
+        "success": {
+          "create": "La catégorie a bien été créée.",
+          "edit": "La catégorie a bien été modifiée.",
+          "delete": "La catégorie a bien été supprimée."
+        }
+      }
+    },
+    "filter-drawer": {
+      "title": "Filtres"
+    }
+  }
+}

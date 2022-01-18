@@ -1,0 +1,135 @@
+@import 'bootstrap-mixins';
+@import 'colors';
+@import 'variables';
+
+@mixin color-fade-animation($name, $from, $to) {
+  @keyframes #{$name} {
+    from {
+      color: $from;
+    }
+    to {
+      color: $to;
+    }
+  }
+  animation: 5s ease-in #{$name};
+}
+
+.temporary-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-400;
+  border-radius: 10px;
+  font-weight: $font-weight-medium-value;
+  font-style: italic;
+
+  @include media-breakpoint-down(sm) {
+    height: 373px;
+  }
+}
+
+.main-row {
+  &:not(:first-child) {
+    margin-top: 2.1rem;
+  }
+}
+
+.home-card {
+  width: 100%;
+  background-color: $background-100;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0;
+
+  &.upload-container {
+    padding: 1rem;
+  }
+
+  &.clickable {
+    transition: box-shadow 0.25s ease-in;
+
+    .name {
+      color: $tertiary-500;
+      transition: color 0.25s ease-in;
+    }
+
+    .bi {
+      color: $tertiary-200;
+      transition: color 0.25s ease-in;
+    }
+
+    &:hover {
+      box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
+
+      &.warning {
+        .name {
+          color: $warning;
+          transition: color 0.25s ease-in;
+        }
+
+        .bi {
+          color: $warning;
+          transition: color 0.25s ease-in;
+        }
+      }
+
+      &.primary {
+        .name {
+          color: $primary-300;
+          transition: color 0.25s ease-in;
+        }
+
+        .bi {
+          color: $primary-300;
+          transition: color 0.25s ease-in;
+        }
+      }
+
+      &.success {
+        .name {
+          color: $success;
+        }
+
+        .bi {
+          color: $success;
+        }
+      }
+    }
+
+    .name-container {
+      display: flex;
+      padding: 5rem 0 5rem 4rem;
+
+      .name {
+        font-size: 2rem;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 3rem 0 2rem 2rem;
+
+        .name {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 3rem 2rem 0;
+
+      .bi {
+        font-size: 10rem;
+      }
+
+      @include media-breakpoint-down(md) {
+        .bi {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+}

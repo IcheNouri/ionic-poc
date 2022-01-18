@@ -1,0 +1,129 @@
+@import 'bootstrap-variables';
+@import 'bootstrap-mixins';
+
+.stepper-container {
+  .steps-row {
+    width: 500px;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
+    .step-col {
+      width: fit-content;
+      position: relative;
+
+      .number-row {
+        .number-col {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 1.2em;
+            width: 2em;
+            height: 2em;
+
+            @include media-breakpoint-down(sm) {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+
+      .title-row {
+        margin-top: 10px;
+
+        .title-col {
+          text-align: center;
+
+          @include media-breakpoint-only(sm) {
+            font-size: 0.9em;
+          }
+
+          @include media-breakpoint-only(xs) {
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      .step-line {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        z-index: -1;
+      }
+
+      &.todo {
+        .number-row {
+          .number-col {
+            div {
+              background-color: $white;
+              border: solid $gray-700 2px;
+              color: $gray-700;
+            }
+          }
+        }
+
+        .title-row {
+          .title-col {
+            color: $gray-700;
+          }
+        }
+      }
+
+      &.in-progress {
+        .number-row {
+          .number-col {
+            div {
+              background-color: $white;
+              border: solid $blue 2px;
+              color: $blue;
+            }
+          }
+        }
+
+        .title-row {
+          .title-col {
+            color: $blue;
+          }
+        }
+      }
+
+      &.todo,
+      &.in-progress {
+        .step-line {
+          border-bottom: dashed $gray-700 2px;
+        }
+      }
+
+      &.done {
+        .number-row {
+          .number-col {
+            div {
+              background-color: $blue;
+              border: solid $blue 2px;
+              color: $white;
+            }
+          }
+        }
+
+        .title-row {
+          .title-col {
+            color: $blue;
+          }
+        }
+
+        .step-line {
+          border-bottom: solid $blue 2px;
+        }
+      }
+    }
+  }
+}

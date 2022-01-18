@@ -1,0 +1,25 @@
+.dropzone {
+  border-radius: 10px;
+  border: dashed 2px #d6d6d6;
+  width: 100%;
+  padding: 2.3rem 0;
+
+  .row-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+
+    .upload-document-img {
+      height: 8.5rem;
+    }
+
+    .or {
+      font-size: 1.5rem;
+    }
+  }
+}

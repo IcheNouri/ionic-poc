@@ -1,0 +1,34 @@
+{
+  "user": {
+    "activation": {
+      "null-first-name": "Votre prénom ne peut pas être nul.",
+      "null-last-name": "Votre nom de famille ne peut pas être nul.",
+      "null-birth-date": "Votre date de naissance ne peut pas être nulle.",
+      "null-email": "Votre addresse email ne peut pas être nulle.",
+      "null-password": "Votre mot de passe ne peut pas être nul.",
+      "first-name-too-long": "Votre prénom est trop long.",
+      "last-name-too-long": "Votre nom de famille est trop long.",
+      "email-too-long": "Votre addresse email est trop longue.",
+      "email-too-short": "Votre addresse email est trop courte.",
+      "password-too-long": "Votre mot de passe est trop long.",
+      "password-too-short": "Votre mot de passe est trop court.",
+      "password-contains-personal-info": "Votre mot de passe ne doit pas contenir les éléments suivants :<br/><ul><li> votre adresse email</li><li> votre nom</li><li> votre prénom</li><li> votre date de naissance</li>",
+      "invalid-identity": "Les informations que vous avez saisies ne correspondent pas avec celles communiquées par votre employeur.",
+      "activation-error": "Une erreur est survenue pendant l'activation."
+    },
+    "tag": {
+      "tag-name-already-in-use": "Impossible de créer un nouveau tag car il existe déjà un tag portant ce nom. Veuillez essayer de rafraîchir la page."
+    },
+    "user": {
+      "invalid-activation-key": "Le code d'activation \"{{ key }}\" est invalide. Veuillez réessayer avec un autre code.",
+      "email-already-used": "Il existe déjà un compte avec cette adresse.",
+      "worker-portal-not-found": "Impossible d'acceder a votre portail salarié"
+    }
+  },
+  "server": {
+    "unknown": "Erreur inconnue.",
+    "user": {
+      "employee-portal-not-found": "Une erreur inattendue est survenue. Nous ne pouvons pas accéder à votre portail salarié. Veuillez réessayer plus tard ou contacter le support"
+    }
+  }
+}

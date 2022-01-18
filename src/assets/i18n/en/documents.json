@@ -1,0 +1,95 @@
+{
+  "documents": {
+    "list": {
+      "new": "New",
+      "emptyDocumentList": "No document to show.",
+      "documentCount": {
+        "none": "No document",
+        "singular": "1 document",
+        "plural": "{{ count }} documents"
+      },
+      "sort": {
+        "by": "Sort by",
+        "mostRecent": "Most recent",
+        "mostOld": "Most old"
+      },
+      "actions": {
+        "download": {
+          "name": "Download",
+          "error": "An unexpected error occurred when trying to download the document. Please try again later."
+        },
+        "share": "Share",
+        "rename": "Rename",
+        "delete": "Place in the trash"
+      }
+    },
+    "search": {
+      "header": {
+        "title": "Documents",
+        "subtitle": "Home",
+        "cardDisplay": "Card view",
+        "listDisplay": "List view"
+      },
+      "form": {
+        "name": "Search by name",
+        "startDate": "From",
+        "endDate": "To"
+      },
+      "action": {
+        "search": "Search",
+        "filter": "Filter"
+      }
+    },
+    "company-filter": {
+      "uploaded-by": "Uploaded by",
+      "me": "Me",
+      "see-more": "See more",
+      "see-less": "See less",
+      "rename": {
+        "action": "Rename",
+        "title": "Rename",
+        "cancel": "Cancel",
+        "save": "Save"
+      }
+    },
+    "category-filter": {
+      "categories": "Categories",
+      "see-more": "Voir plus",
+      "see-less": "Voir moins",
+      "create-button": "Create a category",
+      "create-edit": {
+        "title": {
+          "create": "New category",
+          "edit": "Edit category"
+        },
+        "save": {
+          "create": "Create",
+          "edit": "Save"
+        },
+        "name": {
+          "label": "Name",
+          "placeholder": "Give a name to your category"
+        },
+        "color": "Select a color",
+        "cancel": "Cancel",
+        "delete": "Delete category",
+        "delete-pro-tooltip": "You can not delete this category.",
+        "pro-warning-message": "This cateogry has been automatically created by your company.",
+        "delete-confirm": {
+          "title": "Confirmation",
+          "message": "Are you sure you want to delete this category ?",
+          "yes": "Yes",
+          "no": "No"
+        },
+        "success": {
+          "create": "The category has successfuly been created.",
+          "edit": "The category has successfuly been updated.",
+          "delete": "The category has successfuly been deleted."
+        }
+      }
+    },
+    "filter-drawer": {
+      "title": "Filters"
+    }
+  }
+}

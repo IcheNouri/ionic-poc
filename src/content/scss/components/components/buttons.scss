@@ -1,0 +1,84 @@
+@import 'variables';
+@import 'mixins';
+
+.btn-close-modal {
+  background-color: #f1f3f7;
+  border-radius: 10px;
+  border: solid 2px #d6d6d6;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bi {
+    font-size: 3rem;
+    color: #62605e;
+  }
+
+  &:hover {
+    background-color: #d6d6d6;
+    border-color: #888784;
+  }
+}
+
+.btn-invisible {
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  &:hover {
+    color: $primary !important;
+  }
+}
+/*
+@include responsive-class('btn-icon-only') {
+  padding: 0.9rem 1.6rem;
+
+  .bi {
+    vertical-align: bottom;
+    font-size: 1.8rem;
+  }
+}
+
+@include responsive-class('btn-icon') {
+  padding: 0.7rem 1.6rem 0.7rem 1.2rem;
+
+  .bi {
+    vertical-align: bottom;
+    font-size: 1.8rem;
+    margin-right: 0.76rem;
+  }
+}
+
+@include responsive-class('btn-icon-end') {
+  &.btn-tertiary {
+    padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+
+    .bi {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      vertical-align: bottom;
+    }
+  }
+}*/
+
+.btn-tertiary {
+  padding: 0.7rem;
+  background-color: $tertiary-100;
+  color: $primary-300;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.button-loading {
+  color: rgba(0, 0, 0, 0) !important;
+  position: relative !important;
+}
+
+.myp-spinner-button {
+  position: absolute !important;
+  width: 70% !important;
+  height: 70% !important;
+  top: 15% !important;
+  left: 15% !important;
+}

@@ -1,0 +1,27 @@
+{
+  "myPrimoboxApp": {
+    "appUser": {
+      "home": {
+        "title": "AppUsers",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau AppUser",
+        "createOrEditLabel": "Créer ou éditer un AppUser",
+        "notFound": "Aucun AppUser trouvé"
+      },
+      "created": "Un nouvel AppUser a été créé avec l'identifiant {{ param }}",
+      "updated": "L'AppUser avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "L'AppUser avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer l'AppUser {{ id }} ?"
+      },
+      "detail": {
+        "title": "AppUser"
+      },
+      "id": "ID",
+      "uuid": "UUID",
+      "birthDate": "Date de naissance",
+      "user": "User",
+      "employee-portal": "Portail Salarié"
+    }
+  }
+}

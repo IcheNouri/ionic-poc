@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297" height="80" viewBox="0 0 297 80">
+    <defs>
+        <clipPath id="a">
+            <path data-name="Rectangle 9638" transform="translate(213)" style="fill:#fff" d="M0 0h297v80H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Groupe de masques 14161" transform="translate(-213)" style="clip-path:url(#a)">
+        <g data-name="Groupe 15555">
+            <g style="opacity:.132">
+                <path data-name="Tracé 15650" d="m661.075 799.976 45.374 74.43 56.576 92.758-56.576 92.758-45.6 74.775H547.731l107.683-167.533-107.49-167.188z" transform="rotate(180 520.547 587.886)" style="fill:#9ec8dd"/>
+            </g>
+            <g data-name="logo-arrow" style="opacity:.049">
+                <path data-name="Tracé 15650" d="m624.521 799.976 30.741 44.073 38.33 54.927-38.33 54.924-30.9 44.278h-76.631l72.954-99.2-72.824-99z" transform="translate(-342.59 -861.232)" style="fill:#237dfc"/>
+            </g>
+        </g>
+    </g>
+</svg>

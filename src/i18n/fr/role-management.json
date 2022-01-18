@@ -1,0 +1,8 @@
+{
+  "roleManagement": {
+    "role": "Rôle",
+    "name": "Nom",
+    "operations": "Opérations",
+    "none": "Aucune opération n'est attribuée à ce rôle"
+  }
+}

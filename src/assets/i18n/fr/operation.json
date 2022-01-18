@@ -1,0 +1,36 @@
+{
+  "myPrimoboxApp": {
+    "operation": {
+      "home": {
+        "title": "Opérations",
+        "refreshListLabel": "Actualiser la liste",
+        "notFound": "Aucune opération trouvée"
+      },
+      "detail": {
+        "title": "Opération"
+      },
+      "id": "ID",
+      "name": "Nom",
+      "groupName": "Groupe",
+      "title": "Titre",
+      "role": "Rôles associés",
+      "OP_ACCESS_BACK_OFFICE": {
+        "title": "Accéder au back-office de l'application"
+      },
+      "OP_INSERT_DOCUMENT_TO_MY_PERSONAL_SPACE": {
+        "title": "Insérer des documents dans mon espace personnel"
+      },
+      "OP_INSERT_DOCUMENT_TO_ALL_USERS": {
+        "title": "Insérer des documents dans l'espace personnel de tous les utilisateurs"
+      },
+      "OP_LIST_MY_DOCUMENTS": {
+        "title": "Afficher la liste de mes documents"
+      },
+      "groups": {
+        "unknown": "Non défini",
+        "admin": "Administration",
+        "documents": "Documents"
+      }
+    }
+  }
+}

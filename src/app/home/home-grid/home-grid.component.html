@@ -1,0 +1,43 @@
+<myp-overlay (click)="focusEmployeePortalModal()" [show]="isEmployeePortalPopupShown"></myp-overlay>
+<div class="main-row row">
+  <div class="col-12 col-md pb-3 pb-md-0">
+    <button class="home-card clickable warning btn" (click)="filterByMostUsedCategory()">
+      <div class="name-container">
+        <span class="name">{{ getMostUsedCategoryName() | async }}</span>
+      </div>
+      <div class="icon-container">
+        <span class="bi bi-tags-fill"></span>
+      </div>
+    </button>
+  </div>
+  <div class="col-12 col-md pb-3 pb-md-0">
+    <button class="home-card clickable primary btn" routerLink="/documents">
+      <div class="name-container">
+        <span class="name" jhiTranslate="home.grid.my-documents"></span>
+      </div>
+      <div class="icon-container">
+        <span class="bi bi-file-earmark-text-fill"></span>
+      </div>
+    </button>
+  </div>
+  <div class="col-12 col-md">
+    <button class="home-card clickable success btn" (click)="openEmployeePortalPopup()">
+      <div class="name-container">
+        <span class="name" jhiTranslate="home.grid.employee-portal"></span>
+      </div>
+      <div class="icon-container">
+        <span class="bi bi-person-workspace"></span>
+      </div>
+    </button>
+  </div>
+</div>
+<div class="main-row row">
+  <div class="col-12 col-md pb-3 pb-md-0">
+    <div class="temporary-card">Not Implemented</div>
+  </div>
+  <div class="col-12 col-md pb-5 pb-md-0">
+    <div class="home-card upload-container">
+      <myp-upload-document></myp-upload-document>
+    </div>
+  </div>
+</div>

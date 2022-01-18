@@ -1,0 +1,14 @@
+<div *ngIf="isOpen" [@fade] class="overlay" (click)="close()"></div>
+<div *ngIf="isOpen" [@slide] class="drawer">
+  <div class="header row">
+    <div class="col d-flex align-items-center">
+      <h1 [jhiTranslate]="titleKey">Title</h1>
+    </div>
+    <div class="col-auto d-flex align-items-center justify-content-end">
+      <button class="close-btn btn" (click)="close()">
+        <span class="bi bi-arrow-bar-right"></span>
+      </button>
+    </div>
+  </div>
+  <ng-content></ng-content>
+</div>

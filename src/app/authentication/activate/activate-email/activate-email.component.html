@@ -1,0 +1,49 @@
+<myp-activate-container>
+  <div class="subtitle-row row no-gutters">
+    <div class="subtitle-col col d-flex align-items-center justify-content-center">
+      <span>
+        <span jhiTranslate="authentication.activate.email.subtitle.text"> We recommend using a personal email address to access your personal myPrimobox account. </span>
+        <a class="default-link" (click)="openMoreInfoModal()" jhiTranslate="authentication.activate.email.subtitle.more-info"> More info... </a>
+      </span>
+    </div>
+  </div>
+  <div class="form-container row no-gutters align-items-center justify-content-center">
+    <form class="form col-12 flex-column align-items-center" role="form" (ngSubmit)="submitEmail()" [formGroup]="form">
+      <div class="input-container d-flex flex-column">
+        <label for="email" jhiTranslate="authentication.activate.email.form.email.label"></label>
+        <input
+          #email
+          type="text"
+          class="form-control touched-invalid-only"
+          name="email"
+          id="email"
+          maxlength="254"
+          minlength="5"
+          formControlName="email"
+          [readOnly]="loadingManager.isLoading"
+        />
+        <div
+          *ngIf="form.get('email')!.invalid && form.get('email')!.touched && (form.get('email')?.errors?.email || form.get('email')?.errors?.required)"
+          class="error-message"
+          jhiTranslate="authentication.activate.email.form.email.errors.email"
+        >
+          Please enter a valid email address
+        </div>
+      </div>
+
+      <div class="button-container w-100 d-flex flex-column align-items-center justify-content-center">
+        <button
+          #btnLoading="mypButtonLoading"
+          [mypButtonLoading]="loadingManager"
+          spinnerColor="white"
+          type="submit"
+          [disabled]="!form.valid || btnLoading.isLoading"
+          class="btn btn-primary btn-lg btn-rect"
+          jhiTranslate="authentication.activate.email.next"
+        >
+          Next
+        </button>
+      </div>
+    </form>
+  </div>
+</myp-activate-container>

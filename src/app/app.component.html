@@ -1,3 +1,8 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <myp-navbar [mode]="navbarMode"></myp-navbar>
+
+  <ion-content class="container-fluid" [style.padding-top]="navbarInducedPadding">
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
 </ion-app>

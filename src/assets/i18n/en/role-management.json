@@ -1,0 +1,8 @@
+{
+  "roleManagement": {
+    "role": "Role",
+    "name": "Name",
+    "operations": "Operations",
+    "none": "This role currently has no operation"
+  }
+}

@@ -1,0 +1,103 @@
+@import 'colors';
+@import 'variables';
+
+label {
+  margin: 0;
+}
+
+input[type='text'] {
+  font-size: 1.4rem;
+  color: $tertiary-800;
+  padding: 1.2rem 1rem;
+  background-color: $background-300;
+  border-radius: 5px;
+  border: none;
+  outline-color: $primary-300;
+  outline-width: 1px;
+  font-weight: $font-weight-medium-value;
+
+  &::placeholder {
+    color: $tertiary-800;
+    opacity: 0.4;
+    font-weight: $font-weight-regular-value;
+  }
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: transparent;
+  border: 1px solid $tertiary-200;
+
+  &:checked,
+  &:indeterminate {
+    background-color: $primary-300;
+    border: none;
+    position: relative;
+
+    &:before {
+      font-family: bootstrap-icons !important;
+      content: '\f633';
+      display: block;
+      color: $background-100;
+      font-size: 1.2rem;
+      position: absolute;
+      top: -1px;
+      left: 1px;
+    }
+  }
+
+  &:checked {
+    background-color: $primary-300;
+
+    &:before {
+      content: '\f633';
+    }
+  }
+
+  &:indeterminate {
+    background-color: $tertiary-200;
+
+    &:before {
+      content: '\f63b';
+    }
+  }
+}
+
+.ng-invalid:not(form):not(.ng-pending).ng-touched.touched-invalid-only,
+.ng-invalid:not(form):not(.ng-pending).ng-dirty.dirty-invalid-only,
+.ng-invalid:not(form):not(.ng-pending).ng-touched.ng-dirty {
+  border: 1px solid red;
+}
+
+.password-show-hide {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding-right: 3.5rem;
+  }
+
+  .show-password-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding: 0 1rem 0 0.5rem;
+
+    fa-icon.enabled {
+      color: $primary-300;
+    }
+  }
+}

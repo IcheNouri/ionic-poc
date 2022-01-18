@@ -1,0 +1,54 @@
+<myp-activate-container>
+  <div class="col-12">
+    <div class="row no-gutters">
+      <div class="col d-flex align-items-center justify-content-center">
+        <span jhiTranslate="authentication.activate.code.subtitle">Please enter the code that your employer sent you by mail or email : </span>
+      </div>
+    </div>
+    <form class="form mt-4 d-flex flex-column align-items-center justify-content-center" role="form" (ngSubmit)="submitCode()" [formGroup]="form" aria-label="form">
+      <div class="form-group d-flex align-items-center justify-content-center">
+        <input
+          type="text"
+          class="form-control"
+          name="part1"
+          id="part1"
+          maxlength="4"
+          placeholder="XXXX"
+          [formControl]="getFormControl(0)"
+          (ngModelChange)="focusNextElementIfValid(0)"
+          (input)="setValueToUppercase(0)"
+          (paste)="pasteOverflowCharactersToNextInputs($event)"
+          [readOnly]="loadingManager.isLoading"
+          #inputs
+        />
+        <div class="mx-3">—</div>
+        <input
+          type="text"
+          class="form-control"
+          name="part2"
+          id="part2"
+          maxlength="4"
+          placeholder="XXXX"
+          [formControl]="getFormControl(1)"
+          (ngModelChange)="focusNextElementIfValid(1)"
+          (input)="setValueToUppercase(1)"
+          (keydown.backspace)="deletePreviousCharacterIfEmpty()"
+          [readOnly]="loadingManager.isLoading"
+          #inputs
+        />
+      </div>
+      <button
+        #btnLoading="mypButtonLoading"
+        [mypButtonLoading]="loadingManager"
+        spinnerColor="white"
+        type="submit"
+        [disabled]="!form.valid || btnLoading.isLoading"
+        class="btn btn-primary btn-lg mt-5"
+        jhiTranslate="authentication.activate.code.next"
+        #submitButton
+      >
+        Next
+      </button>
+    </form>
+  </div>
+</myp-activate-container>

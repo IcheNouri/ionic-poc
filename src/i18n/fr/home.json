@@ -1,0 +1,10 @@
+{
+  "home": {
+    "title": "myPrimobox - Accueil",
+    "grid": {
+      "paycheck": "Bulletin de salaire",
+      "my-documents": "Mes Documents",
+      "employee-portal": "Mon Portail Salarié"
+    }
+  }
+}

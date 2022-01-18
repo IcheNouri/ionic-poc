@@ -1,0 +1,49 @@
+@import 'bootstrap-variables';
+@import 'bootstrap-mixins';
+
+a {
+  text-decoration: underline;
+}
+
+.subtitle-row {
+  .subtitle-col {
+    font-size: 1.4em;
+    color: $gray-700;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1em;
+    }
+  }
+}
+
+.form-container {
+  form {
+    margin-top: 10px;
+
+    .input-container {
+      margin-top: 10px;
+    }
+
+    .error-message {
+      font-size: 0.8em;
+      color: $danger;
+      margin-top: 0.2em;
+    }
+
+    label {
+      font-size: 0.8em;
+    }
+
+    .button-container {
+      margin-top: 20px;
+
+      a.back-link {
+        margin-top: 20px;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import 'bootstrap-mixins';
+
+.default-modal {
+  padding: 3rem 3rem 6.57rem 7.4rem;
+
+  @include media-breakpoint-down(sm) {
+    padding: 1.5rem 1.5rem 3rem 3rem;
+  }
+
+  .content {
+    margin-right: 4.4rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .footer {
+    margin-top: 2.1rem;
+    margin-right: 5.68rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 2.5rem;
+    }
+
+    .bottom-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      &.space-between {
+        justify-content: space-between;
+
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+      }
+
+      button:not(:last-child),
+      .item:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

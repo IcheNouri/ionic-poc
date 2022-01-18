@@ -1,0 +1,36 @@
+<myp-activate-container [loadingManager]="activateCodeLoadingManager">
+  <div class="subtitle-row row no-gutters">
+    <div class="subtitle-col col d-flex align-items-center justify-content-center">
+      <span jhiTranslate="authentication.activate.identity.subtitle"> We need to confirm your identity in order to give you access to your documents. </span>
+    </div>
+  </div>
+  <div class="form-container row no-gutters align-items-center justify-content-center">
+    <form class="form col-12 flex-column align-items-center" role="form" (ngSubmit)="submitIdentity()" [formGroup]="form">
+      <div class="input-container d-flex flex-column">
+        <label for="firstname" jhiTranslate="authentication.activate.identity.form.firstname.label"></label>
+        <input type="text" class="form-control mb-4" name="firstname" id="firstname" maxlength="50" formControlName="firstname" [readOnly]="loadingManager.isLoading" />
+      </div>
+      <div class="input-container d-flex flex-column">
+        <label for="lastname" jhiTranslate="authentication.activate.identity.form.lastname.label"></label>
+        <input #lastname type="text" class="form-control mb-4" name="lastname" id="lastname" maxlength="50" formControlName="lastname" [readOnly]="loadingManager.isLoading" />
+      </div>
+      <div class="input-container d-flex flex-column">
+        <label for="birthdate" jhiTranslate="authentication.activate.identity.form.birthdate.label"></label>
+        <input type="date" class="form-control date mb-4" name="birthdate" id="birthdate" formControlName="birthdate" [readOnly]="loadingManager.isLoading" />
+      </div>
+      <div class="button-container w-100 d-flex flex-column align-items-center justify-content-center">
+        <button
+          #btnLoading="mypButtonLoading"
+          [mypButtonLoading]="loadingManager"
+          spinnerColor="white"
+          type="submit"
+          [disabled]="!form.valid || btnLoading.isLoading"
+          class="btn btn-primary btn-lg btn-rect"
+          jhiTranslate="authentication.activate.identity.next"
+        >
+          Next
+        </button>
+      </div>
+    </form>
+  </div>
+</myp-activate-container>

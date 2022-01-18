@@ -1,0 +1,85 @@
+@import 'bootstrap-mixins';
+@import 'colors';
+@import 'variables';
+
+.navbar-content {
+  position: relative;
+  padding: 2.4rem 0 4.2rem 13.9rem;
+
+  @include media-breakpoint-only(lg) {
+    padding-left: 2.7rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 2.6rem 2.7rem;
+  }
+
+  .search-content {
+    width: 40%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
+  .welcome-message {
+    font-size: 2.2rem;
+    font-weight: $font-weight-medium-value;
+    margin-bottom: 1.2rem;
+  }
+
+  .search {
+    max-width: 72rem;
+    border-radius: 10rem;
+    padding: 0.6rem 0.9rem 0.4rem 2.52rem;
+    border: none;
+    background-color: $background-100;
+
+    &:focus-within {
+      outline: solid 1px $primary-300;
+    }
+
+    .search-icon {
+      width: 4rem;
+      height: 40px;
+      margin: 0 0 0 0;
+      padding: 1rem 1rem 1rem;
+      border-radius: 10rem;
+      background-color: $info-disable;
+      border: none;
+
+      .bi {
+        font-size: 1.8rem;
+        color: $background-100;
+      }
+    }
+
+    #search-input {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      outline: none;
+    }
+  }
+
+  .available-space-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 106.5%;
+
+    img {
+      height: 100%;
+    }
+
+    .label {
+      position: absolute;
+      bottom: 9.4%;
+      color: $tertiary-600;
+      font-size: 1.1rem;
+      opacity: 0.61;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+$primary-900: #011e41 !default;
+$primary-800: #183d5a !default;
+$primary-700: #255276 !default;
+$primary-600: #24679b !default;
+$primary-500: #0075b0 !default;
+$primary-400: #0075b0 !default;
+$primary-300: rgb(35, 125, 252) !default;
+$primary-200: #9ec8dd !default;
+$primary-100: #f5f8ff !default;
+
+$secondary-700: #c82333 !default;
+$secondary-500: #d95245 !default;
+$secondary-200: #e6948c !default;
+
+$tertiary-900: #000000 !default;
+$tertiary-800: #242636 !default;
+$tertiary-700: #2c2e3d !default;
+$tertiary-600: #474a58 !default;
+$tertiary-500: #5e6167 !default;
+$tertiary-400: #95969e !default;
+$tertiary-300: #ababb1 !default;
+$tertiary-200: #cacbce !default;
+$tertiary-100: #ededed !default;
+
+$background-500: #f8f9fa !default;
+$background-400: #f3f3f3 !default;
+$background-300: #f7f7f7 !default;
+$background-200: #fafafa !default;
+$background-100: #ffffff !default;
+
+$text-default: $primary-800 !default;
+$text-highlight: $primary-200 !default;
+$text-disable: $tertiary-100 !default;
+$text-link: $primary-500 !default;
+
+$info: #17a2b8 !default;
+$info-hover: #138496 !default;
+$info-disable: #67c3d0 !default;
+$success: #28a745 !default;
+$success-hover: #218838 !default;
+$success-disable: #74c686 !default;
+$warning: #ffc107 !default;
+$warning-hover: #e0a800 !default;
+$warning-disable: #ffd75e !default;
+$danger: #dc3545 !default;
+$danger-hover: #8d1c27 !default;
+$danger-disable: #e97b86 !default;
+
+$primary-hover: #0368f5 !default;
+$notification: #f44154 !default;
+$close-btn: #f1f3f7 !default;

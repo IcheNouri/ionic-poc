@@ -1,0 +1,129 @@
+@import 'variables';
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-regular-value;
+  src: local('Geometria'), url('/content/fonts/Geometria/Geometria.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-regular-value;
+  src: local('Geometria-Italic'), url('/content/fonts/Geometria/Geometria-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-thin-value;
+  src: local('Geometria-Thin'), url('/content/fonts/Geometria/Geometria-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-thin-value;
+  src: local('Geometria-ThinItalic'), url('/content/fonts/Geometria/Geometria-ThinItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-extra-light-value;
+  src: local('Geometria-ExtraLight'), url('/content/fonts/Geometria/Geometria-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-extra-light-value;
+  src: local('Geometria-ExtraLightItalic'), url('/content/fonts/Geometria/Geometria-ExtraLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-light-value;
+  src: local('Geometria-Light'), url('/content/fonts/Geometria/Geometria-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-light-value;
+  src: local('Geometria-LightItalic'), url('/content/fonts/Geometria/Geometria-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-medium-value;
+  src: local('Geometria-Medium'), url('/content/fonts/Geometria/Geometria-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-medium-value;
+  src: local('Geometria-MediumItalic'), url('/content/fonts/Geometria/Geometria-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-bold-value;
+  src: local('Geometria-Bold'), url('/content/fonts/Geometria/Geometria-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-bold-value;
+  src: local('Geometria-BoldItalic'), url('/content/fonts/Geometria/Geometria-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-extra-bold-value;
+  src: local('Geometria-ExtraBold'), url('/content/fonts/Geometria/Geometria-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Geometria-ExtraBoldItalic';
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-extra-bold-value;
+  src: local('Geometria-ExtraBoldItalic'), url('/content/fonts/Geometria/Geometria-ExtraBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-heavy-value;
+  src: local('Geometria-Heavy'), url('/content/fonts/Geometria/Geometria-Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family-default;
+  font-style: italic;
+  font-display: swap;
+  font-weight: $font-weight-heavy-value;
+  src: local('Geometria-HeavyItalic'), url('/content/fonts/Geometria/Geometria-HeavyItalic.woff') format('woff');
+}

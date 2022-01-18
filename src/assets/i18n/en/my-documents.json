@@ -1,0 +1,14 @@
+{
+  "my-documents": {
+    "title": "My Documents",
+    "go-to-upload": "Upload a new document",
+    "upload": {
+      "back-to-list": "Back to my documents",
+      "title": "Upload a document",
+      "button": "Upload a document",
+      "submit": "Submit",
+      "success": "The document \"{{ name }}\" has successfully been uploaded to your personal space.",
+      "error": "An unexpected error occurred during the upload of your document. Please try again later."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "add-document": "Add document",
+    "search-document": "Find a document",
+    "search-document-placeholder": "Search a document",
+    "greetings": "Hello {{ firstName }} {{ lastName }}",
+    "logout": "Log out",
+    "available-space": "Available space : 1.0 GB",
+    "help": {
+      "tooltip": "Help"
+    },
+    "notifications": {
+      "tooltip": "Notifications",
+      "drawer": {
+        "title": "Notifications"
+      },
+      "unread-docs": "You have 2 unread documents"
+    },
+    "personal-info": {
+      "my-personal-info": "My personal info",
+      "favorites": "Favorites",
+      "trash": "Trash",
+      "tcu": "Terms and conditions of use"
+    }
+  }
+}

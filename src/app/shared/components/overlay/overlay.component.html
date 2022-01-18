@@ -1,0 +1,5 @@
+<div class="overlay" [style.display]="show ? 'inline-block' : 'none'">
+  <div class="w-100 h-100 d-flex align-items-center justify-content-center" *ngIf="customMessage">
+    <ng-container [ngTemplateOutlet]="customMessage"></ng-container>
+  </div>
+</div>

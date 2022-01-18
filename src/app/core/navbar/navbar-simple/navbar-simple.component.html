@@ -1,0 +1,47 @@
+<div data-cy="navbar" class="navbar">
+  <a class="logo" routerLink="/">
+    <img class="logo-img" alt="Primobox" src="assets/images/logo_myPrimobox_blue.svg" />
+  </a>
+  <div class="navbar-buttons d-flex justify-content-end align-items-center">
+    <button class="add-btn btn btn-primary btn-icon d-none d-lg-block" routerLink="/documents-old/upload">
+      <span class="bi bi-plus-circle-fill"></span>
+      <span jhiTranslate="navbar.add-document">Add document</span>
+    </button>
+    <button class="navbar-icon-btn btn btn-invisible" ngbTooltip mypTooltipTranslate="navbar.help.tooltip">
+      <span class="bi bi-question-circle"></span>
+    </button>
+    <button class="notification-btn navbar-icon-btn btn btn-invisible" (click)="toggleNotificationDrawer()" ngbTooltip mypTooltipTranslate="navbar.notifications.tooltip">
+      <span class="bi bi-bell-fill"></span>
+      <span *ngIf="hasNewNotifications" class="notitication-badge"></span>
+    </button>
+    <div ngbDropdown display="dynamic" [placement]="['bottom', 'bottom-right', 'bottom-left']" class="user-profile-dropdown d-inline-block">
+      <button class="user-profile btn no-arrow" [ngbTooltip]="getUserName()" id="user-profile-dropdown" ngbDropdownToggle>
+        <span>{{ getUserInitials() }}</span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="user-profile-dropdown">
+        <button ngbDropdownItem routerLink="account/settings">
+          <span class="bi bi-person"></span>
+          <span jhiTranslate="navbar.personal-info.my-personal-info">My personal info</span>
+        </button>
+        <div class="dropdown-divider"></div>
+        <button ngbDropdownItem>
+          <span class="bi bi-heart"></span>
+          <span jhiTranslate="navbar.personal-info.favorites">Favorites</span>
+        </button>
+        <button ngbDropdownItem>
+          <span class="bi bi-trash"></span>
+          <span jhiTranslate="navbar.personal-info.trash">Trash</span>
+        </button>
+        <div class="dropdown-divider"></div>
+        <button ngbDropdownItem>
+          <span class="bi bi-exclamation-square"></span>
+          <span jhiTranslate="navbar.personal-info.tcu">Terms and conditions of use</span>
+        </button>
+      </div>
+    </div>
+    <button class="logout-btn btn btn-tertiary btn-icon-end d-none d-md-block">
+      <span jhiTranslate="navbar.logout" (click)="logout()">Log out</span>
+      <span class="bi bi-box-arrow-left"></span>
+    </button>
+  </div>
+</div>

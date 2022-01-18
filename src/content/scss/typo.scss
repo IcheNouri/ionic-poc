@@ -1,0 +1,46 @@
+@import 'bootstrap-variables';
+@import 'bootstrap-mixins';
+@import 'variables';
+
+body {
+  color: $tertiary-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+h1 {
+  line-height: 3rem !important;
+  font-weight: $font-weight-bold-value !important;
+}
+
+h2 {
+  line-height: 3.5rem !important;
+  color: $primary-700 !important;
+  font-weight: $font-weight-medium-value !important;
+}
+
+h3 {
+  line-height: 3rem !important;
+  font-weight: $font-weight-medium-value !important;
+}
+
+h4 {
+  line-height: 2.5rem !important;
+  font-weight: $font-weight-bold-value !important;
+}
+
+h5 {
+  font-weight: $font-weight-bold-value !important;
+}
+
+h6 {
+  color: $primary-700 !important;
+  font-weight: $font-weight-medium-value !important;
+}

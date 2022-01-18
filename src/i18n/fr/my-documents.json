@@ -1,0 +1,14 @@
+{
+  "my-documents": {
+    "title": "Mes documents",
+    "go-to-upload": "Téléverser un nouveau document",
+    "upload": {
+      "back-to-list": "Retour à mes documents",
+      "title": "Téléverser un document",
+      "button": "Téléverser un document",
+      "submit": "Valider",
+      "success": "Le document \"{{ name }}\" a été téléversé dans votre espace personnel avec succès.",
+      "error": "Une erreur inattendue est survenue lors du téléversement de votre document. Veuillez réessayer plus tard."
+    }
+  }
+}

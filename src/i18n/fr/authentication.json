@@ -1,0 +1,100 @@
+{
+  "authentication": {
+    "title": "myPrimobox : mon compte personnel",
+    "subtitle": "Votre espace de stockage sécurisé et personnel",
+    "actions": {
+      "login": {
+        "title": "Déjà un compte ?",
+        "subtitle": "Accéder à votre compte myPrimobox",
+        "button": "Me connecter",
+        "form": {
+          "password-forgotten": "Mot de passe oublié ?",
+          "remember-me": "Se souvenir de moi"
+        }
+      },
+      "activate": {
+        "title": "Première connexion ?",
+        "subtitle": "Vous avez reçu un courrier postal de la part de votre employeur",
+        "button": "Activer mon compte"
+      }
+    },
+    "activate": {
+      "title": "Activer mon compte",
+      "code": {
+        "subtitle": "Veuillez saisir le code que vous a communiqué votre employeur par courrier postal :",
+        "next": "Continuer",
+        "back": "Retour"
+      },
+      "identity": {
+        "stepper": "Identité",
+        "subtitle": "Nous avons besoin de nous assurer de votre identité afin de vous donner l'accès à vos documents. ",
+        "info": "Pourquoi donner ces informations ?",
+        "form": {
+          "firstname": {
+            "label": "Prénom"
+          },
+          "lastname": {
+            "label": "Nom de famille"
+          },
+          "birthdate": {
+            "label": "Date de naissance"
+          }
+        },
+        "next": "Suivant"
+      },
+      "email": {
+        "stepper": "Email",
+        "subtitle": {
+          "text": "Nous vous recommandons d'utiliser une adresse email personnelle pour accéder à votre compte personnel myPrimobox.",
+          "more-info": "Plus d'infos..."
+        },
+        "more-info": {
+          "title": "Information",
+          "body": "Votre adresse email professionnelle est susceptible d'évoluer tout au long de votre carrière si vous changez de poste, de filiale ou d'entreprise...<br><br>De plus, nous ne pouvons assurer la confidentialité de votre compte si vous utilisez une adresse email professionnelle. <br><br>Pour vous garantir un accès permanent à votre compte myPrimobox, même en dehors du cadre professionnel, vous devez avoir accès à votre email d'identification à tout moment.<br><br>Renseigner votre adresse email personnelle vous permettra d'accéder à vos documents à tout moment.",
+          "done": "J'ai compris"
+        },
+        "form": {
+          "email": {
+            "label": "Adresse email personnelle",
+            "errors": {
+              "email": "Veuillez saisir une adresse email valide"
+            }
+          }
+        },
+        "help": "Pas d'adresse email ?",
+        "next": "Suivant",
+        "back": "Retour"
+      },
+      "password": {
+        "stepper": "Mot de passe",
+        "subtitle": "Nous vous recommandons un mot de passe robuste pour sécuriser votre compte.",
+        "form": {
+          "password": {
+            "label": "Mot de passe"
+          }
+        },
+        "indicators": {
+          "none": "Aide",
+          "weak": "Faible",
+          "medium": "Moyen",
+          "good": "Bon",
+          "excellent": "Excellent"
+        },
+        "criteria": {
+          "title": "Votre mot de passe doit :",
+          "length": "être composé de 8 caractères ou plus",
+          "rules": {
+            "description": "dont au moins 3 des éléments suivants :",
+            "uppercase": "une majuscule",
+            "lowercase": "une minuscule",
+            "number": "un chiffre",
+            "special": "un caractère spécial"
+          }
+        },
+        "cgu": "J'ai lu et j'accepte les CGU",
+        "next": "Activer mon compte",
+        "back": "Retour"
+      }
+    }
+  }
+}

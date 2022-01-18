@@ -1,0 +1,23 @@
+<div class="d-flex flex-column h-100 pt-3 pt-sm-4 pt-md-6 pt-lg-7 px-3 px-sm-4 px-md-8 px-lg-10">
+  <myp-authentication-header [showBackButton]="!(currentStep === ActivateStepEnum.IDENTITY && isLandingOnIdentityStep)"></myp-authentication-header>
+  <div class="row no-gutters mt-5">
+    <div class="col d-flex align-items-center justify-content-center">
+      <h1 jhiTranslate="authentication.activate.title">Activate my account</h1>
+    </div>
+  </div>
+  <div *ngIf="!loadingManager.isLoading && currentStep !== ActivateStepEnum.CODE" class="row no-gutters mt-5">
+    <div class="col align-items-center justify-content-center">
+      <myp-activate-stepper></myp-activate-stepper>
+    </div>
+  </div>
+  <div *ngIf="loadingManager.isLoading" class="row no-gutters mt-3">
+    <div class="loading-cell col align-items-center justify-content-center">
+      <myp-spinner color="primary" size="expand"></myp-spinner>
+    </div>
+  </div>
+  <div *ngIf="!loadingManager.isLoading" class="row no-gutters justify-content-center mt-3">
+    <div class="col-8 mb-5">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

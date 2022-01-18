@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "add-document": "Ajouter un document",
+    "search-document": "Trouver un document",
+    "search-document-placeholder": "Rechercher un document",
+    "greetings": "Bonjour {{ firstName }} {{ lastName }}",
+    "logout": "Déconnexion",
+    "available-space": "Espace disponible : 1.0 Go",
+    "help": {
+      "tooltip": "Assistance"
+    },
+    "notifications": {
+      "tooltip": "Notifications",
+      "drawer": {
+        "title": "Notifications"
+      },
+      "unread-docs": "Vous avez 2 documents non lus"
+    },
+    "personal-info": {
+      "my-personal-info": "Mes informations personnelles",
+      "favorites": "Favoris",
+      "trash": "Corbeille",
+      "tcu": "Conditions générales d'utilisation"
+    }
+  }
+}
