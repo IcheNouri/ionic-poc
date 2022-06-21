@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {NavbarMode} from './core/navbar/model/navbar-mode.enum';
 import {UserRouteAccessService} from './core/auth/user-route-access.service';
 

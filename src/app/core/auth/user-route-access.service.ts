@@ -4,8 +4,8 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { StateStorageService } from './state-storage.service';
-import { KeycloakService } from 'keycloak-angular';
-import {AccountService} from "./account.service";
+import {AccountService} from './account.service';
+import {KeycloakService} from 'keycloak-angular';
 
 @Injectable({ providedIn: 'root' })
 export class UserRouteAccessService {
@@ -15,7 +15,7 @@ export class UserRouteAccessService {
     return this.accountService.identity().pipe(
       map(account => {
         if (account) {
-          const roles = route.data['roles'];
+          const roles = route.data.roles;
 
           if (!roles || roles.length === 0 || this.accountService.hasAnyRole(roles)) {
             return true;
