@@ -115,9 +115,6 @@ workflows:
               - name: Build  Ionic project
                 script: |
                   npm run build
-              - name: Set Android SDK location
-                script: |
-                  echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
               - name: Set up keystore
                 script: |
                   echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
@@ -132,7 +129,9 @@ workflows:
                 script: |
                   # npx cap copy # <- use this is you don't need to update native dependencies
                   npx cap sync # <- update native dependencies and copy web assets to native project
-                  
+              - name: Set Android SDK location
+                script: |
+                  echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
               - name: Launch emulator
                 script: |
                   set -e # exit on first failed command
