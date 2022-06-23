@@ -33,17 +33,17 @@ workflows:
           scripts:
               - name: Install npm dependencies for Ionic project
                 script: |
-                  npm install
+                            npm install
               - name: Cocoapods installation
                 script: |
-                  cd ios/App && pod install
+                            cd ios/App && pod install
               - name: Update dependencies and copy web assets to native project
                 script: |
                   # npx cap copy # <- use this is you don't need to update native dependencies
-                  npx cap sync # <- update native dependencies and copy web assets to native project
-              - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
+                  npx cap sync # <- update native dependencies and copy web assets to native project          
+              - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
                 script: |
-                  keychain initialize
+                            keychain initialize
               # - name: Set up Provisioning profiles from environment variables (Use with manual code signing)
               #   script: |
               #     PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
@@ -54,34 +54,29 @@ workflows:
               - name: Fetch signing files
                 script: |
                   # app-store-connect fetch-signing-files "com.nevercode.ncionicapp" --type IOS_APP_STORE --create
-                  app-store-connect fetch-signing-files $(xcode-project detect-bundle-id) --type IOS_APP_STORE --create
-              # - name: Set up signing certificate (Use with manual code signing)
-              #   script: |
-              #     echo $CM_CERTIFICATE | base64 --decode > /tmp/certificate.p12
-              #     keychain add-certificates --certificate /tmp/certificate.p12 --certificate-password $CM_CERTIFICATE_PASSWORD
-
+                  app-store-connect fetch-signing-files $(xcode-project detect-bundle-id) --type IOS_APP_STORE --create          
               - name: Add certificates to keychain
                 script: |
-                  keychain add-certificates
+                            keychain add-certificates
               - name: Increment build number
                 script: |
                   #!/bin/sh
                   set -e
                   set -x
-                  cd $FCI_BUILD_DIR/ios/App
-                  # agvtool new-version -all $(($BUILD_NUMBER +1))
-                  agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
+                  cd $CM_BUILD_DIR/ios/App
+                  agvtool new-version -all $(($BUILD_NUMBER +1))          
               - name: Set up code signing settings on Xcode project
                 script: |
-                  xcode-project use-profiles
+                            xcode-project use-profiles
               - name: Build ipa for distribution
                 script: |
-                  xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
-          artifacts:
-              - build/ios/ipa/*.ipa
-              - /tmp/xcodebuild_logs/*.log
-              - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-              - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+                            xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+            artifacts:
+                - build/ios/ipa/*.ipa
+                - /tmp/xcodebuild_logs/*.log
+                - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+                - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+          
           publishing:
             email:
               recipients:
@@ -93,7 +88,7 @@ workflows:
   ionic-capacitor-android-workflow:
           name: Ionic Capacitor Android Workflow
           max_build_duration: 120
-          instance_type: linux
+          instance_type: mac_mini
           environment:
               groups:
               # Add the group environment variables in Codemagic UI (either in Application/Team variables) - https://docs.codemagic.io/variables/environment-variable-groups/
@@ -120,6 +115,9 @@ workflows:
               - name: Build  Ionic project
                 script: |
                   npm run build
+              - name: Set Android SDK location
+                script: |
+                  echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
               - name: Set up keystore
                 script: |
                   echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
@@ -146,7 +144,7 @@ workflows:
                 working_directory: android
                 script: ./gradlew assembleRelease
           artifacts:
-            - app/build/outputs/**/**/*.apk
+            - android/app/build/outputs/**/*.apk
           publishing:
               email:
                   recipients:
