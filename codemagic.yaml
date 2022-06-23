@@ -93,7 +93,7 @@ workflows:
   ionic-capacitor-android-workflow:
           name: Ionic Capacitor Android Workflow
           max_build_duration: 120
-          instance_type: mac_mini
+          instance_type: linux
           environment:
               groups:
               # Add the group environment variables in Codemagic UI (either in Application/Team variables) - https://docs.codemagic.io/variables/environment-variable-groups/
@@ -134,6 +134,13 @@ workflows:
                 script: |
                   # npx cap copy # <- use this is you don't need to update native dependencies
                   npx cap sync # <- update native dependencies and copy web assets to native project
+                  
+              - name: Launch emulator
+                script: |
+                  set -e # exit on first failed command
+                  cd $ANDROID_HOME/tools
+                  emulator -avd emulator &
+                  adb wait-for-device
 
               - name: Build Android APK
                 working_directory: android
