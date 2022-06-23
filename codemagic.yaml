@@ -12,7 +12,7 @@ workflows:
                     # CM_KEY_ALIAS_PASSWORD <-- Put your keystore alias password here
                     # CM_KEY_ALIAS_USERNAME <-- Put your keystore alias username here
                   - other
-              node: latest
+              node: 16.13.1
           triggering:
               events:
                   - push
